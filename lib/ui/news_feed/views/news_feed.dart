@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:components/components.dart';
 
 class NewsFeedScreen extends StatelessWidget {
   const NewsFeedScreen({super.key});
@@ -21,7 +22,27 @@ class NewsFeedView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        centerTitle: true,
+        title: const SimpleText(
+          'Breaking News',
+          textStyle: TextStyleEnum.headlineMedium,
+        ),
+        actions: [
+          SimpleIconButton(
+            icon: Icons.notifications,
+            colorPalette: ColorPalette.primaryContainer,
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (context) {
+                  return Container();
+                },
+              );
+            },
+          ),
+        ],
+      ),
       extendBody: true,
       body: Container(),
     );

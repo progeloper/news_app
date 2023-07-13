@@ -3,6 +3,7 @@ export 'components/atoms/simple_constants.dart';
 export 'components/atoms/simple_icon_button.dart';
 export 'components/atoms/simple_text.dart';
 export 'components/atoms/simple_image.dart';
+export 'components/atoms/simple_label.dart';
 export 'components/molecules/simple_card.dart';
 export 'components/molecules/simple_list_tile.dart';
 export 'components/organisms/simple_carousel.dart';
